@@ -1,4 +1,4 @@
-setwd("~/All ELB Work Documents/R Working Directory")
+
 HHPower <- read.table("household_power_consumption.txt", sep=";", header = TRUE)
 HHPower2 <- subset(HHPower, HHPower$Date == "1/2/2007" | HHPower$Date == "2/2/2007")
 HHPower2$Date<-as.Date(as.character(HHPower2$Date),format="%d/%m/%Y")
